@@ -1,0 +1,47 @@
+<!DOCTYPE   html>
+<html>
+    <head>
+        <title>폼 테그</title>
+    </head>
+    <body>
+        <form method="get"> <!--#현재 자기자신의 URL-->      
+            이름 <input type="text" name="uname" vaule="1111"> <br>
+            비밀번호 <input type="password" name="pw"> <br>
+            사진 <input type="file" name="upphoto"> <br>
+            취미 : 영화 <input type="checkbox" name="h1"
+            value="movie">, 놀기 <input type="checkbox"
+            name=h2 value="play"> <br>
+            성별 : 남 <input type="radio" name="gender"
+            value="m"> 여 <input type="radio" name="gender"
+            value="w"><br>
+            
+            hidden: <input type="hidden" name="hiddenData" value="1111"> <br>
+            
+            button: <input type="button" value="새로운버튼"> <br>
+            
+            reset: <input type="reset"> <br>
+            
+            select: 출생년도
+            <select name="bYear">
+                <option value="2019">2019</option>
+                <option>2020</option>
+                <option>2021</option><br>
+            </select>
+            
+            <br>
+            submit: <input type="submit" value="회원가입"> 
+        </form>  
+    </body>
+</html>
+
+<!--get방식
+http://127.0.0.1:57424/fromTag.html?uname=%EC%86%90%ED%9D%A5%EB%AF%BC
+&pw=1111
+&upphoto=%ED%96%84%ED%86%A0%EB%A6%AC.jpg - post방식
+&h1=movie
+&h2=play
+&gender=m
+&hiddenData=1111
+&bYear=2021#-->
+
+jsp에서 java코드로 변수를 객체로 만들어서 jdbc 통해서 db에 저장 가능

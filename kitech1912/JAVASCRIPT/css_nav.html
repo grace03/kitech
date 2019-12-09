@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>네비게이션</title>
+        <style>
+            
+            ul {
+                list-style: none;
+            }
+            
+            ul.nav>li {
+                border: 1px solid black;
+                width : 50px;
+                float:left;
+                text-align: center;
+                margin-left:-1px;
+            }
+            
+            ul.nav>li:first-child {
+                border-radius: 10px 0 0 10px;
+            }
+            
+            ul.nav>li:last-child {
+                border-radius: 0 10px 10px 0;
+            }
+            
+            ul.nav>li:nth-child(2n) {
+                background-color: aquamarine;
+            }
+            
+            ul.nav>li:nth-child(2n+1) {
+                background-color: aqua;
+            }
+            
+            ul.nav>li:first-child>a:link {
+                text-decoration: none;
+                color : #7F7700;
+            }
+            
+            ul.nav>li:first-child>a:hover {
+                font-size: 1.2em;
+                font-weight: bold;
+                color:#7F7700;
+            }
+            
+            /* Color Theme Swatches in Hex */
+.shade-of-yellow-1-hex { color: #BFB300; }
+.shade-of-yellow-2-hex { color: #7F7700; }
+.shade-of-yellow-3-hex { color: #FFEF00; }
+.shade-of-yellow-4-hex { color: #403C00; }
+.shade-of-yellow-5-hex { color: #E5D700; }
+/* Color Theme Swatches in RGBA */
+.shade-of-yellow-1-rgba { color: rgba(191, 179, 0, 1); }
+.shade-of-yellow-2-rgba { color: rgba(126, 119, 0, 1); }
+.shade-of-yellow-3-rgba { color: rgba(255, 239, 0, 1); }
+.shade-of-yellow-4-rgba { color: rgba(63, 60, 0, 1); }
+.shade-of-yellow-5-rgba { color: rgba(228, 214, 0, 1); }
+/* Color Theme Swatches in HSLA */
+.shade-of-yellow-1-hsla { color: hsla(56, 100, 37, 1); }
+.shade-of-yellow-2-hsla { color: hsla(56, 100, 24, 1); }
+.shade-of-yellow-3-hsla { color: hsla(56, 100, 50, 1); }
+.shade-of-yellow-4-hsla { color: hsla(56, 100, 12, 1); }
+.shade-of-yellow-5-hsla { color: hsla(56, 100, 44, 1); }
+            
+           /* ul.nav>li:first-child>a:visited {
+                color: black;
+                font-weight: bold;
+            }*/
+        
+        </style>
+    </head>
+    <body>
+    
+        <ul class="nav">
+            <li><a href="http://www.naver.com">home</a></li>
+            <li class="shade-of-yellow-5-hex" >02</li>
+            <li>03</li>
+            <li>04</li>
+            <li>05</li>
+            <li>06</li>
+            <li>07</li>
+        </ul>
+        
+    </body>
+</html>

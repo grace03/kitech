@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>레이아웃</title>
+    
+       <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding|Tomorrow&display=swap" rel="stylesheet">
+        
+    <style>
+    
+    
+    /*body 초기화*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*body 초기화*/
+        body {
+            background-color: beige
+        }
+
+        /*메인 블럭*/
+        #main_wrap {
+
+            width: 858px;
+            
+            /*height : 300px;*/
+            
+            padding : 20px;
+            
+            background-color: #FFF;
+
+            border: 1px solid #DDD;
+
+            margin: 20px auto;
+
+            border-radius: 5px;
+            box-shadow: 5px 5px 10px #DDD
+        }
+
+        /*해더*/
+        #header {
+            height: 80px;
+            /*background-color: antiquewhite;*/
+        }
+        
+        #header>h1.title {
+            margin-top : 10px;
+            margin-left : 30px;
+            margin-left : 30px;
+            
+            font-family: 'Nanum Gothic Coding', monospace;
+            /*background-color: aquamarine;*/
+        }
+        
+        #header>h1.title + span {
+            margin-left : 30px;
+            font-family: 'Nanum Gothic Coding', monospace;
+        }
+        #header>h1.title + span {
+                margin-left : 30px
+                margin-left : 30px;
+                font-family: 'Nanum Pen Script', cursive;
+            }
+            
+        /*네비게이션*/
+        #nav {
+            height: 35px;
+            /*background-color: burlywood;*/
+            overflow: hidden
+            border-top:  1px solid #DDD;
+            border-bottom:  1px solid #DDD;
+        }
+        #nav>ul.menu {
+            width: 400px;
+            float: left;
+            overflow: hidden;
+            
+            list-style:none;
+        }
+        
+        #nav>ul.menu>li{
+            float: right;
+            width: 35px;
+            
+            line-height: 35px;
+            text-align: center;
+        
+        }
+        
+        #nav>ul.menu>li:hover {
+                background-color: black;
+                color: white;
+            }
+        #nav>div.searchbox{
+                float: right; 
+                height : 35px;
+            }
+            
+        
+        #nav>div.searchbox>input[type=text] {
+             border-radius: 24px 0 0 24px;
+                border : 1px solid #DDD;
+            
+            height : 24px;
+            width:120px;
+            
+            padding-left: 15px;
+            font-size: 18px;
+            vertical-align: middle;
+              margin-top : 4px;
+        
+        }
+        
+        #nav>div.searchbox>input[type=button] {
+            padding : 3px 10px;
+            
+            border : 1px solid #DDD;
+            border-radius: 0 20px 20px 0;
+            
+            background-color: #EEE;
+             vertical-align: middle;
+                margin-top : 4px;
+        } 
+
+        /*컨텐츠 렙*/
+        #content_wrap {
+            overflow: hidden;
+        }
+
+        /*Content*/
+        #content {
+        width: 629px;
+        height: 300px;
+
+        background-color: aquamarine;
+            
+        float:left;
+            
+        }
+        
+        #content>article {
+            
+        }
+        
+        #content>article {
+          
+           padding : 10px;
+                border-bottom: 1px solid #DDD;
+                margin-bottom : 10px;
+        }
+         #content>article>h1 {
+                
+                /*margin-top : 10px;
+                margin-bottom : 10px;*/
+                margin : 5px 0;
+            }
+        
+       #content>article>h4 {
+                
+            }
+            
+            #content>article>img {
+                margin : 5px 0;
+            }
+        
+        /*aside*/
+        #aside {
+            width: 229px;
+            height: 200px;
+
+           /* background-color: coral;*/
+            float: left;
+        }
+        #aside>h3 {
+            margin-top : 20px;
+            
+        }
+        #aside>ul {
+            list-style: none;
+            margin-top: 5px;
+            margin-left: 15px;
+            margin-bottom: 25px;
+        }
+        
+        #aside>ul>li {
+            height: 25px;
+
+        }
+        /*footer*/
+        #footer {
+            height: 100px;
+            background-color: antiquewhite;
+            text-align: center;
+            line-height: 100px;
+            
+            border-top : 1px solid #DDD;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!--메인 렙-->
+    <div id="main_wrap">
+
+        <!--페이지 해더 : 로고, BI, CI, text-->
+        <div id="header">
+        <h1 class="title">TITLE Blog</h1>
+        <span>블러그 페이지 입니다.</span>
+        <!--페이지 해더 종료-->
+
+        <!--페이지 네비게이션: 메뉴, 검색박스-->
+        <div id="nav">
+            <!--메뉴-->
+            <ul class="menu">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>javascript</li>
+                
+            </ul>
+            <div class="searchbox"></div>
+            <div>
+                <input type="text"><input type="button" value="검색">
+            </div>
+        
+        </div>
+        <!--네비게이션 종료-->
+
+        <!--컨텐츠와 사이드 메뉴 감싸는 렙-->
+        <div id="content_wrap">
+            <!--컨텐츠 : article(제목, 날짜, 이미지, 본문)-->
+            <div id="content">content</div>
+            <div id="content">
+                
+                
+                
+                <article>
+                 <h1>the game of throne</h1>
+                 <h5>2019.12.04</h5>
+                 <img src="content">
+                    Set on the fictional continents of Westeros and Essos, Game of Thrones has several plots and a large ensemble cast and follows several story arcs. One arc is about the Iron Throne of the Seven Kingdoms and follows a web of alliances and conflicts among the noble dynasties either vying to claim the throne or fighting for independence from it. Another focuses on the last descendant of the realm's deposed ruling dynasty, who has been exiled and is plotting a return to the throne, while another story arc follows the Night's Watch, a brotherhood defending the realm against the fierce peoples and legendary creatures of the North
+                </article></div>
+            <!--컨텐츠종류-->
+            <!--사이드 메뉴: 카테고리 메뉴-->
+
+            <div id="aside">
+                <h3>카테고리 1</h3>
+                <ul> 
+                    <li>데이터</li>
+                    <li>데이터</li>
+                    <li>데이터</li>
+                    <li>데이터</li>
+                <h3>카테고리 2</h3>    
+                    <li>데이터</li>
+                    <li>데이터</li>
+                    <li>데이터</li>
+                    <li>데이터</li>
+                </ul>
+            </div>
+            <!-- 사이드 메뉴 종료-->
+        </div>
+        <!--컨텐츠 랩 종료-->
+
+
+        <!--푸터시작: 카피라이트, 회사정보, 글로벌 메뉴-->
+        <div id="footer"></div>
+        <!--푸터 종료-->
+
+    </div>
+
+
+
+</body>
+
+</html>
